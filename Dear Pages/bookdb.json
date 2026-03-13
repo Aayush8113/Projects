@@ -1,0 +1,94 @@
+{
+  "shelf_title": "The Verified 13-Book Memory Shelf",
+  "categories": [
+    {
+      "category_id": 1,
+      "category_name": "Classic & Modern Hindi Fiction",
+      "books": [
+        {
+          "title": "Godaan",
+          "author": "Munshi Premchand",
+          "core_concept": "Social Realism; the struggle of the Indian peasantry."
+        },
+        {
+          "title": "Gunaho Ka Devta",
+          "author": "Dharamvir Bharati",
+          "core_concept": "Platonic love vs. societal morality in middle-class India."
+        },
+        {
+          "title": "Deewar Mein Ek Khidki Rahti Thi",
+          "author": "Vinod Kumar Shukla",
+          "core_concept": "Magical realism; the extraordinary beauty of ordinary lives."
+        }
+      ]
+    },
+    {
+      "category_id": 2,
+      "category_name": "Contemporary Indian Fiction & Drama",
+      "books": [
+        {
+          "title": "Musafir Cafe",
+          "author": "Divya Prakash Dubey",
+          "core_concept": "Modern relationships; the conflict between freedom and stability."
+        },
+        {
+          "title": "October Junction",
+          "author": "Divya Prakash Dubey",
+          "core_concept": "Time-spanning romance; the 'what ifs' of life."
+        },
+        {
+          "title": "Kasap",
+          "author": "Manohar Shyam Joshi",
+          "core_concept": "A bittersweet love story set in the Kumaon hills."
+        },
+        {
+          "title": "3 Mulaqatein",
+          "author": "Divya Prakash Dubey",
+          "core_concept": "Storytelling/Drama; human connections through chance meetings."
+        },
+        {
+          "title": "We Are There for Each Other",
+          "author": "Sagar Chudesara",
+          "core_concept": "Romance and Friendship; a road trip journey exploring deep emotional bonds and fighting for love."
+        }
+      ]
+    },
+    {
+      "category_id": 3,
+      "category_name": "Poetry & Literary Studies",
+      "books": [
+        {
+          "title": "Jaun Elie: Ek Ajab Gajab Shayar",
+          "author": "Muntazir Firozabadi",
+          "core_concept": "Biographical study; analyzing the nihilism and wit of Jaun Elia."
+        },
+        {
+          "title": "Ibnebatuti",
+          "author": "Divya Prakash Dubey",
+          "core_concept": "Contemporary 'Nayi Wali Hindi' poetry and musings."
+        }
+      ]
+    },
+    {
+      "category_id": 4,
+      "category_name": "Contemporary Indian-English Fiction",
+      "books": [
+        {
+          "title": "Was I Ever Enough",
+          "author": "Yash Ranjit Jain",
+          "core_concept": "Self-discovery; navigating heartbreak and personal worth."
+        },
+        {
+          "title": "This Thing Called Love",
+          "author": "Deblina Bhattacharyya",
+          "core_concept": "Anthology/Novel; exploring the facets of urban romance."
+        },
+        {
+          "title": "Masala Chai",
+          "author": "Divya Prakash Dubey",
+          "core_concept": "Short stories; quick, flavorful insights into everyday life."
+        }
+      ]
+    }
+  ]
+}
