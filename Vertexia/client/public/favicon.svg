@@ -1,0 +1,68 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Deep blue gradient — matches color1 #1d4ed8 metallic -->
+    <linearGradient id="blue" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%"   stop-color="#3b82f6"/>
+      <stop offset="40%"  stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <!-- Cyan gradient — matches color2 #38bdf8 -->
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <!-- Shine highlight strip -->
+    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Drop shadow for depth -->
+    <filter id="depth">
+      <feDropShadow dx="1.5" dy="2" stdDeviation="2.5" flood-color="#1e3a8a" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Dark navy circle background (matches the dark UI) -->
+  <circle cx="50" cy="50" r="50" fill="#0f172a"/>
+  <!-- Subtle inner glow ring -->
+  <circle cx="50" cy="50" r="47" fill="none" stroke="#1d4ed8" stroke-width="0.6" opacity="0.4"/>
+
+  <!--
+    VertexiaLogo THREE.Shape coords → SVG (scale=38, center at 50,50):
+    outer shell:  moveTo(-0.6, 1)  → (27.2, 12)
+                  lineTo(-0.2, 1)  → (42.4, 12)   inner top-left
+                  lineTo( 0, -0.2) → (50,   43.4)  inner valley
+                  lineTo( 0.2, 1)  → (57.6, 12)   inner top-right
+                  lineTo( 0.6, 1)  → (72.8, 12)
+                  lineTo( 0, -1)   → (50,   88)    tip bottom
+                  close
+  -->
+
+  <!-- Back layer: cyan V, slightly scaled up + offset for the 3D "depth" effect -->
+  <path
+    d="M 25,11 L 40.5,11 L 50,45 L 59.5,11 L 75,11 L 50,90 Z"
+    fill="url(#cyan)"
+    opacity="0.65"
+    transform="translate(2.5, 2.5)"
+    filter="url(#depth)"
+  />
+
+  <!-- Front layer: main blue V — exact VertexiaLogo shape -->
+  <path
+    d="M 27.2,12 L 42.4,12 L 50,43.4 L 57.6,12 L 72.8,12 L 50,88 Z"
+    fill="url(#blue)"
+    filter="url(#depth)"
+  />
+
+  <!-- Metallic shine strip on left arm of the V -->
+  <path
+    d="M 27.2,12 L 38,12 L 48,46 L 50,43.4 L 42.4,12 Z"
+    fill="url(#shine)"
+  />
+  <!-- Metallic shine strip on right arm of the V -->
+  <path
+    d="M 72.8,12 L 62,12 L 52,46 L 50,43.4 L 57.6,12 Z"
+    fill="url(#shine)"
+    opacity="0.5"
+  />
+</svg>
