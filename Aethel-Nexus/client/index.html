@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <title>Aethel Nexus | The AI Architect</title>
+    <meta name="description" content="Next-generation AI workspace for developers. Generate code, analyze data, and build faster with Gemini 2.5 Flash.">
+    <meta name="theme-color" content="#0F172A" />
+
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="apple-touch-icon" href="/logo.svg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aethel Nexus | AI for Builders">
+    <meta property="og:description" content="Code faster with an AI context-aware assistant.">
+    <meta property="og:image" content="/logo.svg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+      body { margin: 0; background-color: #0F172A; font-family: 'Inter', sans-serif; overflow: hidden; }
+      
+      /* The Loader Container */
+      #initial-loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background: #0F172A;
+        color: white;
+        flex-direction: column;
+        gap: 20px;
+        transition: opacity 0.5s ease-out;
+      }
+
+      /* The Spinner */
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgba(99, 102, 241, 0.3);
+        border-radius: 50%;
+        border-top-color: #6366f1; /* Indigo 500 */
+        animation: spin 1s ease-in-out infinite;
+      }
+
+      @keyframes spin { to { transform: rotate(360deg); } }
+      
+      .loading-text {
+        font-size: 14px;
+        font-weight: 500;
+        opacity: 0.7;
+        letter-spacing: 0.5px;
+        animation: pulse 2s infinite;
+      }
+      
+      @keyframes pulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="initial-loader">
+        <div class="spinner"></div>
+        <div class="loading-text">Initializing Nexus...</div>
+      </div>
+    </div>
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
