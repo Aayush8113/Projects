@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --amber-500: #f59e0b;
+}
+
+body {
+  background-color: #050505;
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif; /* Recommended: add Inter font to index.html */
+}
+
+/* Luxury Ken Burns Effect */
+@keyframes kenburns {
+  0% { transform: scale(1) translate(0, 0); }
+  50% { transform: scale(1.1) translate(-1%, -1%); }
+  100% { transform: scale(1) translate(0, 0); }
+}
+
+.animate-kenburns {
+  animation: kenburns 25s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #050505; }
+::-webkit-scrollbar-thumb { background: var(--amber-500); border-radius: 10px; }
+
+/* Hide default cursor on desktop for custom cursor experience */
+@media (min-width: 1024px) {
+  html, button, a { cursor: none !important; }
+}
+
+::selection {
+  background: var(--amber-500);
+  color: black;
+}
